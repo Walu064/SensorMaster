@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SensorMaster</string>
+    <string name="nothing" />
 </resources>
