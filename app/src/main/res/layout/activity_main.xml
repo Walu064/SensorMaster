@@ -29,11 +29,11 @@
         android:id="@+id/button_lightSensor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/przejd_do_odczytu_danych_z_czujnika_nat_enia_wiat_a" />
+        android:text="@string/przejd_do_odczytu_czujnika_nat_enia_wiat_a" />
 
     <Button
         android:id="@+id/button_accelerometer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/przejd_do_odczytu_z_akcelerometru" />
+        android:text="@string/przejd_do_odczytu_z_czujnika_zbli_eniowego" />
 </LinearLayout>

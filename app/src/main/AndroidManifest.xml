@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SensorMaster">
         <activity
-            android:name=".AccelerometerActivity"
+            android:name=".ProximitySensorActivity"
             android:exported="false" />
         <activity
             android:name=".LightSensorActivity"

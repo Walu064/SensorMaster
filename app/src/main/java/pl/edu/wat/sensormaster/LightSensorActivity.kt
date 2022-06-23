@@ -1,12 +1,14 @@
 package pl.edu.wat.sensormaster
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.widget.Button
 import android.widget.TextView
 
 class LightSensorActivity : AppCompatActivity(), SensorEventListener {
@@ -23,7 +25,7 @@ class LightSensorActivity : AppCompatActivity(), SensorEventListener {
 
         //Inicjacja właściwych komponentów do wyświetlania wskazań sensora:
         lightSensorTextView = findViewById(R.id.textView_lightSensorData)
-        infoTextView = findViewById(R.id.textView_info)
+        infoTextView = findViewById(R.id.textView_infoLight)
         infoTextView.text = "Wskazanie czujnika natężenia światła:"
 
         //Obiekt klasy sensor będący reprezentacją sensora natężenia światła:
@@ -35,6 +37,12 @@ class LightSensorActivity : AppCompatActivity(), SensorEventListener {
         //Obsługa błędów sensora:
         if(lightSensor == null) lightSensorTextView.text = "Błąd sensora!"
         else lightSensorTextView.text = "Sensor bangla"
+
+        val buttonReturnToMainActivity : Button = findViewById(R.id.button_returnToMainMenu)
+        buttonReturnToMainActivity.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onAccuracyChanged(p0: Sensor?, p1: Int) {

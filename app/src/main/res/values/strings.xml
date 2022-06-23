@@ -4,4 +4,6 @@
     <string name="przejd_do_odczytu_danych_z_czujnika_nat_enia_wiat_a">Przejdź do odczytu danych z czujnika natężenia światła,</string>
     <string name="przejd_do_odczytu_z_akcelerometru">Przejdź do odczytu z akcelerometru</string>
     <string name="powr_t_do_menu_g_wnego">Powrót do menu głównego</string>
+    <string name="przejd_do_odczytu_czujnika_nat_enia_wiat_a">Przejdź do odczytu czujnika natężenia światła</string>
+    <string name="przejd_do_odczytu_z_czujnika_zbli_eniowego">Przejdź do odczytu z czujnika zbliżeniowego</string>
 </resources>
