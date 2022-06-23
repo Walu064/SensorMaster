@@ -9,9 +9,31 @@
     tools:context=".MainActivity" >
 
     <TextView
+        android:id="@+id/textView_titleLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nothing"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
         android:id="@+id/textView_listOfSensors"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/nothing"
         tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/button_lightSensor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/przejd_do_odczytu_danych_z_czujnika_nat_enia_wiat_a" />
+
+    <Button
+        android:id="@+id/button_accelerometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/przejd_do_odczytu_z_akcelerometru" />
 </LinearLayout>
