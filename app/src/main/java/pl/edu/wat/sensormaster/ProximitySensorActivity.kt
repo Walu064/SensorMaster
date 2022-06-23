@@ -21,7 +21,7 @@ class ProximitySensorActivity : AppCompatActivity(), SensorEventListener {
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_accelerometer)
+        setContentView(R.layout.activity_proximity_sensor)
 
         proximitySensorTextView = findViewById(R.id.textView_ProximitySensorData)
         infoTextView = findViewById(R.id.textView_infoProximity)
@@ -30,9 +30,6 @@ class ProximitySensorActivity : AppCompatActivity(), SensorEventListener {
         manager  = getSystemService(SENSOR_SERVICE) as SensorManager
         proximitySensor = manager.getDefaultSensor(Sensor.TYPE_LIGHT)
         manager.registerListener(this, manager.getDefaultSensor(Sensor.TYPE_LIGHT), 0, null)
-
-        if(proximitySensor == null) proximitySensorTextView.text = "Błąd sensora!"
-        else proximitySensorTextView.text = "Sensor bangla"
 
         val buttonReturnToMainActivity : Button = findViewById(R.id.button_returnToMainMenu)
         buttonReturnToMainActivity.setOnClickListener{

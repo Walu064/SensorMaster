@@ -34,10 +34,6 @@ class LightSensorActivity : AppCompatActivity(), SensorEventListener {
 
         manager.registerListener(this, manager.getDefaultSensor(Sensor.TYPE_LIGHT), 0, null)
 
-        //Obsługa błędów sensora:
-        if(lightSensor == null) lightSensorTextView.text = "Błąd sensora!"
-        else lightSensorTextView.text = "Sensor bangla"
-
         val buttonReturnToMainActivity : Button = findViewById(R.id.button_returnToMainMenu)
         buttonReturnToMainActivity.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
