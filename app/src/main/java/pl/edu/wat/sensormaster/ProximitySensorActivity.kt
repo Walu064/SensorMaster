@@ -28,8 +28,8 @@ class ProximitySensorActivity : AppCompatActivity(), SensorEventListener {
         infoTextView.text = "Wskazanie czujnika zbliżeniowego:"
 
         manager  = getSystemService(SENSOR_SERVICE) as SensorManager
-        proximitySensor = manager.getDefaultSensor(Sensor.TYPE_LIGHT)
-        manager.registerListener(this, manager.getDefaultSensor(Sensor.TYPE_LIGHT), 0, null)
+        proximitySensor = manager.getDefaultSensor(Sensor.TYPE_PROXIMITY)
+        manager.registerListener(this, manager.getDefaultSensor(Sensor.TYPE_PROXIMITY), 0, null)
 
         val buttonReturnToMainActivity : Button = findViewById(R.id.button_returnToMainMenu)
         buttonReturnToMainActivity.setOnClickListener{
