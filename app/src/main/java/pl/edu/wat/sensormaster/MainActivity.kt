@@ -16,9 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //Zmienna obsługująca textView z xml:
-        val textViewListOfSensors : TextView = findViewById(R.id.textView_listOfSensors)
         val textViewTitleLabel : TextView = findViewById(R.id.textView_titleLabel)
-        textViewListOfSensors.text = " "
         textViewTitleLabel.text = "Lista dostępnych sensorów: "
 
         //SensorManager do obsługi sensorów:
@@ -27,11 +25,13 @@ class MainActivity : AppCompatActivity() {
         //Inicjacja listy sensorów do wydrukowania ich nazw:
         val listOfSensors : List<Sensor> = manager.getSensorList(Sensor.TYPE_ALL)
 
+        /*
         //pętla do wydrukowania sensorów w print View:
         val listOfSensorsLength : Int = listOfSensors.size
         for(i in 0 until listOfSensorsLength) {
             textViewListOfSensors.text =  textViewListOfSensors.text as String + "\n" + listOfSensors[i].name
         }
+         */
 
         //Zmienne do obsługi buttonów do przejścia do kolejnych aktywności:
         val buttonLightSensorActivity : Button = findViewById(R.id.button_lightSensor)
@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val buttonAccelerometerActivityActivity : Button = findViewById(R.id.button_accelerometer)
+        val buttonAccelerometerActivityActivity : Button = findViewById(R.id.button_proximitySensor)
         buttonAccelerometerActivityActivity.setOnClickListener{
             val intent = Intent(this, ProximitySensorActivity::class.java)
             startActivity(intent)

@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projekty_programy/AndroidStudio_projekty/SensorMaster/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/48724/AndroidStudioProjects/SensorMaster2/app/src/main/res/layout/activity_accelerometer.xml" value="0.2265625" />
         <entry key="..\:/Users/48724/AndroidStudioProjects/SensorMaster2/app/src/main/res/layout/activity_light_sensor.xml" value="0.24479166666666666" />
         <entry key="..\:/Users/48724/AndroidStudioProjects/SensorMaster2/app/src/main/res/layout/activity_main.xml" value="0.25" />
