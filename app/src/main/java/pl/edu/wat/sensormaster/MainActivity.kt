@@ -51,9 +51,15 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val buttonAccelerometerActivityActivity : Button = findViewById(R.id.button_proximitySensor)
-        buttonAccelerometerActivityActivity.setOnClickListener{
+        val buttonProximitySensorActivity : Button = findViewById(R.id.button_proximitySensor)
+        buttonProximitySensorActivity.setOnClickListener{
             val intent = Intent(this, ProximitySensorActivity::class.java)
+            startActivity(intent)
+        }
+
+        val buttonAccelerometerActivity : Button = findViewById(R.id.button_accelerometer)
+        buttonAccelerometerActivity.setOnClickListener{
+            val intent = Intent(this, AccelerometerActivity::class.java)
             startActivity(intent)
         }
     }

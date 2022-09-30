@@ -11,7 +11,7 @@
     <TextView
         android:id="@+id/textView_titleLabel"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="66dp"
         android:text="@string/nothing"
         android:textAlignment="center"
         android:textAllCaps="false"
